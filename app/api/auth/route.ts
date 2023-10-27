@@ -1,6 +1,6 @@
 // pages/api/auth/register.ts
 import { NextRequest, NextResponse } from 'next/server';
-import prisma from '@/prisma/client';// Adjust the import path if necessary
+import prisma from '@/prisma/client';
 import bcrypt from 'bcrypt';
 import { createUserSchema } from '../../validators/userSchema'; // Adjust the import path if necessary
 

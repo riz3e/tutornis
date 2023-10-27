@@ -6,3 +6,4 @@ export const createUserSchema = z.object({
   name: z.string().optional(),
   role: z.enum(['STUDENT', 'TEACHER']).optional(),
 });
+
