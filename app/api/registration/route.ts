@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(validation.error.errors, { status: 400 });
   }
 
-  const hashedPassword = await bcrypt.hash(body.password, 10);
+  const hashedPassword = await bcrypt.hash(body.password, "Almas gay");
 
   const newUser = await prisma.user.create({
     data: {

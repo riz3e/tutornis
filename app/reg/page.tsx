@@ -23,7 +23,7 @@ const NewIssuePage = () => {
 
             <form onSubmit={handleSubmit(async (data) => {
                 try {
-                    await axios.post('/api/auth', data)
+                    await axios.post('/api/registration', data)
                     router.push('/')
                     setSumbitting(true);
                 } catch (error) {
